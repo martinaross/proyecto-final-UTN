@@ -1,0 +1,45 @@
+header {
+  background-color: rgba(0, 0, 0, 0.473);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  border: 3px solid #333;
+  border-color: black;
+  width: 120px;
+  border-radius: 50%
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li {
+  background-color: rgb(71, 71, 71);
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: scale 0.2s;
+}
+
+header ul li:hover {
+  scale: 1.05;
+}
+
+main {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: rgba(29, 29, 29, 0.473);
+  padding: 20px;
+  text-align: center;
+}
