@@ -8,22 +8,22 @@ const Home = () => {
   return (
     <Layout>
       <div className="image-container">
-        <h1>BIENVENIDOS A NUESTRA PÁGINA</h1>
+        <h1>  BIENVENIDOS A NUESTRO SITIO WEB  </h1>
 
-        <h2> Aquí podrás encontrar información sobre nuestro contacto y sucursales. </h2>
+        <h2> Descubri todo sobre nuestros servicios, medios de contacto, ¡y más! </h2>
 
-        <p>¡Descubre todo lo que tenemos para ofrecerte!</p>
+        <h3>¡MÁS DE 250 CLIENTES HASTA LA FECHA!</h3>
 
-        <img src="https://images.pexels.com/photos/669584/pexels-photo-669584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen representativa de nuestro sitio" />
+        <img src="https://images.pexels.com/photos/2170450/pexels-photo-2170450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen representativa de nuestro sitio" />
       </div>
 
       <div className="items">
-        <h3>Entrena con expertos</h3>
+        <h3>El profesionalismo y la pasión, juntos.</h3>
         <ul>
-          <li>Gimnasios con equipos modernos</li>
-          <li>Clases grupales</li>
-          <li>Acceso a nuestra aplicación móvil</li>
-          <li>Horario flexible</li>
+          <li>BODAS</li>
+          <li>CUMPLEAÑOS</li>
+          <li>BOOKS PERSONALES</li>
+          <li>FOTO PRODUCTO</li>
         </ul>
 
       </div>

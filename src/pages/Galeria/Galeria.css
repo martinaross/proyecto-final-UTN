@@ -1,0 +1,29 @@
+.custom-card {
+  max-width: 540px;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  position: absolute;
+  top: -60px;
+  left: 28%;
+  z-index: 10;
+}
+
+button {
+  display: block;
+  margin: auto;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

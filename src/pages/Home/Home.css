@@ -8,7 +8,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
 
 /* Imagen de fondo */
@@ -20,11 +19,19 @@
   top: 0;
   left: 0;
   z-index: -1;
+  opacity: 90%;
 }
 
-/* Texto centrado sobre la imagen */
-.image-container h1,
-.image-container p,
+.image-container h1 {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  z-index: 1;
+  margin: 0;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.image-container h3,
 .image-container h2 {
   color: white;
   z-index: 1;
@@ -32,8 +39,7 @@
   padding: 10px;
 }
 
-
-.image-container p {
+.image-container h3 {
   position: absolute;
   bottom: 40px;
 }
@@ -50,12 +56,15 @@
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 .items li {
   margin: 10px;
+  text-align: center;
 }
 
 .items h3 {
   padding: 40px;
+  text-align: center;
 }

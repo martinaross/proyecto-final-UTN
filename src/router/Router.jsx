@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Home } from "../pages/Home/Home";
-import { Sucursales } from "../pages/Sucursales/Sucursales";
+import Galeria from "../pages/Galeria/Galeria";
 import { Contacto } from "../pages/Contacto/Contacto"
 
 
@@ -9,10 +9,9 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Para cada ruta defino el path y la vista */}
         <Route path="/" element={<Home />} />
-        <Route path="/sucursales" element={<Sucursales />} />
-        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/galeria" element={<Galeria />} />
+        <Route path="/contacto" element={<Contacto saludo="¡Hola! Bienvenido a nuestra página de contacto" />} />
       </Routes>
     </BrowserRouter>
   )
