@@ -1,0 +1,168 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  min-height: calc(100vh - 90px);
+  background: radial-gradient(circle at left, #2a1208, #000 55%);
+  color: white;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg-image {
+  position: absolute;
+  right: 0%;
+  bottom: 0px;
+  width: 700px;
+  max-width: 80%;
+  z-index: 2;
+  pointer-events: none;
+
+}
+
+.hero-bg-image {
+  mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 30%,
+      rgba(0, 0, 0, 1) 100%);
+
+  -webkit-mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 30%,
+      rgba(0, 0, 0, 1) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  padding: 4rem;
+  color: white;
+}
+
+
+.hero-left {
+  position: relative;
+  z-index: 5;
+  max-width: 100%;
+}
+
+.hero-left h1 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-left p {
+  margin-top: 20px;
+  color: #bfbfbf;
+  max-width: 420px;
+}
+
+.feature {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ddd;
+}
+
+
+
+.hero-right img {
+  max-width: 420px;
+  width: 100%;
+}
+
+/* css boton */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 2rem;
+}
+
+.btn-glass {
+  padding: 12px 26px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+.btn-glass:hover {
+  background: #b14b2065;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Diseño responsivo */
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 70px 20px 80px;
+    min-height: auto;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-glass {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-bg-image {
+    width: 300px;
+    right: -40%;
+    bottom: 10px;
+    opacity: 0.45;
+  }
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 80px 40px;
+  }
+
+  .hero-left h1 {
+    font-size: 44px;
+  }
+
+  .hero-bg-image {
+    width: 500px;
+    right: -15%;
+  }
+}
+
+/* ================= PANTALLAS GRANDES ================= */
+
+@media (min-width: 1400px) {
+  .hero-left h1 {
+    font-size: 70px;
+  }
+
+  .hero-bg-image {
+    width: 820px;
+  }
+}

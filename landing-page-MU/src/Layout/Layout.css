@@ -1,0 +1,159 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: black;
+  color: white;
+}
+
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ff7a33;
+}
+
+.nav-links a {
+  margin: 0 14px;
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: #ff7a33;
+  color: black;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Configuracion CSS footer */
+.footer {
+  width: 100%;
+  background: #000000;
+  padding: 1.5rem 2rem;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 55%;
+}
+
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-email {
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer-icons a {
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.footer-icons a:hover {
+  opacity: 0.6;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 14px 16px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    display: none;
+    /* oculto links */
+  }
+
+  .nav-right span {
+    display: none;
+    /* oculto teléfono */
+  }
+
+  .btn-primary {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 1.2rem 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .footer-email {
+    font-size: 0.85rem;
+  }
+
+  .footer-icons a {
+    font-size: 1.4rem;
+  }
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 24px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+}
+
+/* ================= GRANDES ================= */
+
+@media (min-width: 1400px) {
+  .navbar {
+    padding: 24px 80px;
+  }
+
+  .footer {
+    padding: 2rem 6rem;
+  }
+}
